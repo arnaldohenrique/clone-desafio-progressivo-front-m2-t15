@@ -20,9 +20,9 @@ Windows:
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:arnaldohenrique/desafio-progressivo-front-m2-t15
+$ git clone git@github.com:arnaldohenrique/clone-desafio-progressivo-front-m2-t15
 
-# Execute o inde.html
+# Execute o index.html
 ```
 
 ## 📝 Licença
