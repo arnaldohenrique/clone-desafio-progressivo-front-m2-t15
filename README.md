@@ -2,7 +2,7 @@
 
 <img src="imagem.png" alt="Exemplo imagem">
 
-> Desafio da "@Cubos academy" para trestar o conhecimento na manipulação da DOM. Demonstração de interface para e-commerce de café.
+> Desafio da "@Cubos academy" para testar o conhecimento na manipulação da DOM. Demonstração de interface para e-commerce de café.
 
 ## 💻 Pré-requisitos
 
