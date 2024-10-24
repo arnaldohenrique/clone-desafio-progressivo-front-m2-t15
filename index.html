@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <title>Cubospresso</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/carrinho.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="./index.html">
+        <img src="./image/logo.svg" alt="logo cubospresso">
+      </a>
+      <a href="#" class="link__quantity">
+        <img src="./image/Tote.svg" alt="Carrinho">
+        <span class="badge__quantity">1</span>
+      </a>
+    </div>
+    <div class="carrinho">
+      <div class="carrinho__header">
+        <p>Seu carrinho</p>
+        <img class="fechar" src="image/X.svg" alt="x">
+      </div>
+      <div class="carrinho__main">
+        <div class="carrinho__main__quantidade">
+          <p class="carrinho__main__quantidade--item">2 itens</p>
+          <p class="carrinho__main__quantidade--excluir">Excluir tudo</p>
+        </div>
+        <div class="carrinho__main__item">
+
+        </div>
+        
+        <div class="carrinho__main__valor">
+          <div class="carrinho__main__valor--subtotal">
+            <p>Subtotal</p>
+            <p class="carrinho__main__valor--subtotal--total">R$ 0,00</p>
+          </div>
+          <div class="carrinho__main__valor--entrega">
+            <p>Entrega</p>
+            <p class="carrinho__main__valor--entrega--total">R$ 0,00</p>
+          </div>
+          <div class="carrinho__main__valor--total">
+            <p>Total</p>
+            <p class="carrinho__main__valor--total--total">R$ 0,00</p>
+          </div>
+        </div>
+      </div>
+      <div class="carrinho__button">
+        <p>Finalizar compra</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="slogan">
+      <div class="container">
+        <h1 class="slogan__title">Fragrância e sabor elevado ao cubo</h1>
+        <p class="slogan__text">
+          Explore nossa variedade de blends exclusivos e saboreie a perfeição em cada gole.
+        </p>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title classico">Clássicos</h2>
+        <div class="products__list">
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-01.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Espresso</h4>
+            <div class="product__tag">
+              <img src="./image/Plant.png" alt="planta">
+              <span>Vegano</span>
+            </div>
+          </a>
+          <a href="./product.html" id="primeiroItem" class="products__list--item">
+            <img src="./image/product-02.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Americano</h4>
+            <div class="product__tag">
+              <img src="./image/Plant.png" alt="planta">
+              <span>Vegano</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-03.png" alt="">
+            <h3 class="products__list--price">R$ 8,00 <span>R$ 10,00</span></h3>
+            <h4 class="products__list--name">Café com leite</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-04.png" alt="">
+            <h3 class="products__list--price">R$ 10,00</h3>
+            <h4 class="products__list--name">Cappuccino</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-05.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Latte</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-06.png" alt="">
+            <h3 class="products__list--price">R$ 8,00 <span>R$ 10,00</span></h3>
+            <h4 class="products__list--name">Macchiato</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-07.png" alt="">
+            <h3 class="products__list--price">R$ 8,00 <span>R$ 10,00</span></h3>
+            <h4 class="products__list--name">Mocha</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-08.png" alt="">
+            <h3 class="products__list--price">R$ 8,00 <span>R$ 10,00</span></h3>
+            <h4 class="products__list--name">Irish Coffee</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title gelado">Gelados</h2>
+        <div class="products__list">
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-09.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Cold Brew</h4>
+            <div class="product__tag">
+              <img src="./image/Plant.png" alt="planta">
+              <span>Vegano</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-10.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Frappuccino</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-11.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Café gelado com laranja e tônica</h4>
+            <div class="product__tag">
+              <img src="./image/Plant.png" alt="planta">
+              <span>Vegano</span>
+            </div>
+          </a>
+          <a href="./product.html" class="products__list--item">
+            <img src="./image/product-12.png" alt="">
+            <h3 class="products__list--price">R$ 0,00 <span>R$ 0,00</span></h3>
+            <h4 class="products__list--name">Milk shake de café</h4>
+            <div class="product__tag">
+              <img src="./image/Cow.png" alt="Lactose">
+              <span>Contém lactose</span>
+            </div>
+          </a>          
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="container">
+      <img src="./image/logo-02.svg" alt="logo cubospresso">
+      <div class="footer__list">
+        <div class="footer__list--item">
+          <h3>Classicos</h3>
+          <ul>
+            <li>Espresso</li>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Macchiato</li>
+            <li>Mocha</li>
+            <li>Irish Coffee</li>
+          </ul>
+        </div>
+        <div class="footer__list--item">
+          <h3>Gelados</h3>
+          <ul>
+            <li>Cold Brew</li>
+            <li>Frappuccino</li>
+            <li>Laranja e tônica</li>
+            <li>Milk shake</li>
+          </ul>
+        </div>
+        <div class="footer__list--item">
+          <h3>Veganos</h3>
+          <ul>
+            <li>Espresso</li>
+            <li>Americano</li>
+            <li>Cold Brew</li>
+            <li>Irish Coffee</li>          
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="js/index.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

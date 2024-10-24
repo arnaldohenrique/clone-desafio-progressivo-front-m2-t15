@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <title>Cubospresso</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/carrinho.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="./index.html">
+        <img src="./image/logo.svg" alt="logo cubospresso">
+      </a>
+      <a href="#" class="link__quantity">
+        <img src="./image/Tote.svg" alt="Carrinho">
+        <span class="badge__quantity">1</span>
+      </a>
+    </div>
+    <div class="carrinho">
+      <div class="carrinho__header">
+        <p>Seu carrinho</p>
+        <img class="fechar" src="image/X.svg" alt="x">
+      </div>
+      <div class="carrinho__main">
+        <div class="carrinho__main__quantidade">
+          <p class="carrinho__main__quantidade--item">2 itens</p>
+          <p class="carrinho__main__quantidade--excluir">Excluir tudo</p>
+        </div>
+        <div class="carrinho__main__item">
+          <div class="carrinho__main__item--produto">
+            <img src="image/product-01.png" alt="produto">
+            <div style="width: 100%; padding-left: 8px;">
+              <div class="carrinho__main__item--descricao">
+                <div class="carrinho__main__item--nome">
+                  <p>Nome do produto</p>
+                  <div class="carrinho__main__item--vegano flex">
+                    <img src="image/Plant.svg" alt="planta">
+                    <p>Vegano</p>
+                  </div>
+                </div>
+                <img src="image/Trash.svg" alt="lata de lixo">
+              </div>
+              <div class="carrinho__main__item--preco flex" style="padding-top: 16px;">
+                <div class="carrinho__main__item--preco">
+                  <p>R$</p>
+                  <p>0,00</p>
+                </div>
+                <div class="carrinho__main__item--quantidade flex">
+                  <img src="image/Minus.svg" alt="menos">
+                  <p>1</p>
+                  <img src="image/Plus.svg" alt="mais">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carrinho__main__valor">
+          <div class="carrinho__main__valor--subtotal">
+            <p>Subtotal</p>
+            <p class="carrinho__main__valor--subtotal--total">R$ 0,00</p>
+          </div>
+          <div class="carrinho__main__valor--entrega">
+            <p>Entrega</p>
+            <p class="carrinho__main__valor--entrega--total">R$ 0,00</p>
+          </div>
+          <div class="carrinho__main__valor--total">
+            <p>Total</p>
+            <p class="carrinho__main__valor--total--total">R$ 0,00</p>
+          </div>
+        </div>
+      </div>
+      <div class="carrinho__button">
+        <p>Finalizar compra</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container product__container">
+      <a href="./index.html" class="product__link">Voltar para o início</a>
+      <section class="product">
+        
+      </section>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <section class="container">
+      <img src="./image/logo-02.svg" alt="logo cubospresso">
+      <div class="footer__list">
+        <div class="footer__list--item">
+          <h3>Classicos</h3>
+          <ul>
+            <li>Espresso</li>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Macchiato</li>
+            <li>Mocha</li>
+            <li>Irish Coffee</li>
+          </ul>
+        </div>
+        <div class="footer__list--item">
+          <h3>Gelados</h3>
+          <ul>
+            <li>Cold Brew</li>
+            <li>Frappuccino</li>
+            <li>Laranja e tônica</li>
+            <li>Milk shake</li>
+          </ul>
+        </div>
+        <div class="footer__list--item">
+          <h3>Veganos</h3>
+          <ul>
+            <li>Espresso</li>
+            <li>Americano</li>
+            <li>Cold Brew</li>
+            <li>Irish Coffee</li>          
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
